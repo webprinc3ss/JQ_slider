@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQuery Slider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .red {
+            color: red
+        }
+
+        .green {
+            color: green
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.myLink').on('click', function () {
+                $('h1').addClass('red');
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Welcome Everyone</h1>
+    <a href="#" class="myLink">Click me</a>
+</body>
+
+</html>
