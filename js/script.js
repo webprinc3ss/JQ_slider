@@ -44,11 +44,14 @@ $(document).ready(function () {
         if ($('.oldActive').is(':first-child')) {
             $('.slide').last().addClass('active');
         } else {
-            $('.oldActive').next().addClass('active');
+            $('.oldActive').prev().addClass('active');
         }
         $('.oldActive').removeClass('oldActive');
         $('.slide').fadeOut(speed);
         $('.active').fadeIn(speed);
     }
+
+    //Pause autoswitch on Mouseover
+
 
 });
